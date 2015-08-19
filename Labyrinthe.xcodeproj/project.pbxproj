@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		2B2ECF841B62AEB500CA6E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECF831B62AEB500CA6E48 /* main.m */; };
 		2B2ECF871B62AEB500CA6E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECF861B62AEB500CA6E48 /* AppDelegate.m */; };
-		2B2ECF8A1B62AEB500CA6E48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECF891B62AEB500CA6E48 /* ViewController.m */; };
-		2B2ECF8D1B62AEB500CA6E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2ECF8B1B62AEB500CA6E48 /* Main.storyboard */; };
 		2B2ECF8F1B62AEB500CA6E48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2ECF8E1B62AEB500CA6E48 /* Images.xcassets */; };
 		2B2ECF921B62AEB500CA6E48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2ECF901B62AEB500CA6E48 /* LaunchScreen.xib */; };
 		2B2ECF9E1B62AEB500CA6E48 /* LabyrintheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECF9D1B62AEB500CA6E48 /* LabyrintheTests.m */; };
+		2B2ECFAA1B62B27800CA6E48 /* MZLGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFA81B62B27800CA6E48 /* MZLGameViewController.m */; };
+		2B2ECFAB1B62B27800CA6E48 /* MZLGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2ECFA91B62B27800CA6E48 /* MZLGameViewController.xib */; };
+		2B2ECFB01B62BAB400CA6E48 /* MZLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFAF1B62BAB400CA6E48 /* MZLPlayer.m */; };
+		2B2ECFC21B62BB2100CA6E48 /* MZLDungeonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFC11B62BB2100CA6E48 /* MZLDungeonFactory.m */; };
+		2B2ECFD01B62C41C00CA6E48 /* MZLWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFCF1B62C41C00CA6E48 /* MZLWeapon.m */; };
+		2B2ECFD31B62C42800CA6E48 /* MZLArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFD21B62C42800CA6E48 /* MZLArmor.m */; };
+		2B2ECFD61B62C43200CA6E48 /* MZLAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFD51B62C43200CA6E48 /* MZLAccessory.m */; };
+		2B2ECFDD1B62DBF000CA6E48 /* MZLMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFDC1B62DBF000CA6E48 /* MZLMerchant.m */; };
+		2B2ECFE01B62DBFE00CA6E48 /* MZLMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECFDF1B62DBFE00CA6E48 /* MZLMonster.m */; };
+		2B66BF1B1B81403900703F7F /* MZLShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66BF191B81403900703F7F /* MZLShopViewController.m */; };
+		2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */; };
+		2B8A37631B7A642300D47507 /* MZLShopFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A37621B7A642300D47507 /* MZLShopFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +42,33 @@
 		2B2ECF831B62AEB500CA6E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B2ECF851B62AEB500CA6E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B2ECF861B62AEB500CA6E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B2ECF881B62AEB500CA6E48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B2ECF891B62AEB500CA6E48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B2ECF8C1B62AEB500CA6E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B2ECF8E1B62AEB500CA6E48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B2ECF911B62AEB500CA6E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B2ECF971B62AEB500CA6E48 /* LabyrintheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabyrintheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2ECF9C1B62AEB500CA6E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B2ECF9D1B62AEB500CA6E48 /* LabyrintheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabyrintheTests.m; sourceTree = "<group>"; };
+		2B2ECFA71B62B27800CA6E48 /* MZLGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLGameViewController.h; sourceTree = "<group>"; };
+		2B2ECFA81B62B27800CA6E48 /* MZLGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLGameViewController.m; sourceTree = "<group>"; };
+		2B2ECFA91B62B27800CA6E48 /* MZLGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MZLGameViewController.xib; sourceTree = "<group>"; };
+		2B2ECFAE1B62BAB400CA6E48 /* MZLPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLPlayer.h; sourceTree = "<group>"; };
+		2B2ECFAF1B62BAB400CA6E48 /* MZLPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLPlayer.m; sourceTree = "<group>"; };
+		2B2ECFC01B62BB2100CA6E48 /* MZLDungeonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLDungeonFactory.h; sourceTree = "<group>"; };
+		2B2ECFC11B62BB2100CA6E48 /* MZLDungeonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLDungeonFactory.m; sourceTree = "<group>"; };
+		2B2ECFCE1B62C41C00CA6E48 /* MZLWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLWeapon.h; sourceTree = "<group>"; };
+		2B2ECFCF1B62C41C00CA6E48 /* MZLWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLWeapon.m; sourceTree = "<group>"; };
+		2B2ECFD11B62C42800CA6E48 /* MZLArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLArmor.h; sourceTree = "<group>"; };
+		2B2ECFD21B62C42800CA6E48 /* MZLArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLArmor.m; sourceTree = "<group>"; };
+		2B2ECFD41B62C43200CA6E48 /* MZLAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLAccessory.h; sourceTree = "<group>"; };
+		2B2ECFD51B62C43200CA6E48 /* MZLAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLAccessory.m; sourceTree = "<group>"; };
+		2B2ECFDB1B62DBF000CA6E48 /* MZLMerchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLMerchant.h; sourceTree = "<group>"; };
+		2B2ECFDC1B62DBF000CA6E48 /* MZLMerchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLMerchant.m; sourceTree = "<group>"; };
+		2B2ECFDE1B62DBFE00CA6E48 /* MZLMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLMonster.h; sourceTree = "<group>"; };
+		2B2ECFDF1B62DBFE00CA6E48 /* MZLMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLMonster.m; sourceTree = "<group>"; };
+		2B66BF181B81403900703F7F /* MZLShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZLShopViewController.h; path = ../MZLShopViewController.h; sourceTree = "<group>"; };
+		2B66BF191B81403900703F7F /* MZLShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZLShopViewController.m; path = ../MZLShopViewController.m; sourceTree = "<group>"; };
+		2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MZLShopViewController.xib; path = ../MZLShopViewController.xib; sourceTree = "<group>"; };
+		2B8A37611B7A642300D47507 /* MZLShopFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLShopFactory.h; sourceTree = "<group>"; };
+		2B8A37621B7A642300D47507 /* MZLShopFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLShopFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +112,13 @@
 			children = (
 				2B2ECF851B62AEB500CA6E48 /* AppDelegate.h */,
 				2B2ECF861B62AEB500CA6E48 /* AppDelegate.m */,
-				2B2ECF881B62AEB500CA6E48 /* ViewController.h */,
-				2B2ECF891B62AEB500CA6E48 /* ViewController.m */,
-				2B2ECF8B1B62AEB500CA6E48 /* Main.storyboard */,
+				2B2ECFA71B62B27800CA6E48 /* MZLGameViewController.h */,
+				2B2ECFA81B62B27800CA6E48 /* MZLGameViewController.m */,
+				2B66BF181B81403900703F7F /* MZLShopViewController.h */,
+				2B66BF191B81403900703F7F /* MZLShopViewController.m */,
 				2B2ECF8E1B62AEB500CA6E48 /* Images.xcassets */,
-				2B2ECF901B62AEB500CA6E48 /* LaunchScreen.xib */,
+				2B2ECFAC1B62B2C600CA6E48 /* Helper Classes */,
+				2B2ECFAD1B62B2CE00CA6E48 /* Interface */,
 				2B2ECF811B62AEB500CA6E48 /* Supporting Files */,
 			);
 			path = Labyrinthe;
@@ -117,6 +148,63 @@
 				2B2ECF9C1B62AEB500CA6E48 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B2ECFAC1B62B2C600CA6E48 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2B2ECFC01B62BB2100CA6E48 /* MZLDungeonFactory.h */,
+				2B2ECFC11B62BB2100CA6E48 /* MZLDungeonFactory.m */,
+				2B8A37611B7A642300D47507 /* MZLShopFactory.h */,
+				2B8A37621B7A642300D47507 /* MZLShopFactory.m */,
+				2B2ECFDA1B62DBDA00CA6E48 /* Player */,
+				2B2ECFC41B62BB4300CA6E48 /* NPCs */,
+				2B2ECFC31B62BB3000CA6E48 /* Items */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		2B2ECFAD1B62B2CE00CA6E48 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B2ECF901B62AEB500CA6E48 /* LaunchScreen.xib */,
+				2B2ECFA91B62B27800CA6E48 /* MZLGameViewController.xib */,
+				2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2B2ECFC31B62BB3000CA6E48 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				2B2ECFCE1B62C41C00CA6E48 /* MZLWeapon.h */,
+				2B2ECFCF1B62C41C00CA6E48 /* MZLWeapon.m */,
+				2B2ECFD41B62C43200CA6E48 /* MZLAccessory.h */,
+				2B2ECFD51B62C43200CA6E48 /* MZLAccessory.m */,
+				2B2ECFD11B62C42800CA6E48 /* MZLArmor.h */,
+				2B2ECFD21B62C42800CA6E48 /* MZLArmor.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		2B2ECFC41B62BB4300CA6E48 /* NPCs */ = {
+			isa = PBXGroup;
+			children = (
+				2B2ECFDB1B62DBF000CA6E48 /* MZLMerchant.h */,
+				2B2ECFDC1B62DBF000CA6E48 /* MZLMerchant.m */,
+				2B2ECFDE1B62DBFE00CA6E48 /* MZLMonster.h */,
+				2B2ECFDF1B62DBFE00CA6E48 /* MZLMonster.m */,
+			);
+			name = NPCs;
+			sourceTree = "<group>";
+		};
+		2B2ECFDA1B62DBDA00CA6E48 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2B2ECFAE1B62BAB400CA6E48 /* MZLPlayer.h */,
+				2B2ECFAF1B62BAB400CA6E48 /* MZLPlayer.m */,
+			);
+			name = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +256,7 @@
 				TargetAttributes = {
 					2B2ECF7D1B62AEB500CA6E48 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5EN98V4335;
 					};
 					2B2ECF961B62AEB500CA6E48 = {
 						CreatedOnToolsVersion = 6.4;
@@ -199,8 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2ECF8D1B62AEB500CA6E48 /* Main.storyboard in Resources */,
 				2B2ECF921B62AEB500CA6E48 /* LaunchScreen.xib in Resources */,
+				2B2ECFAB1B62B27800CA6E48 /* MZLGameViewController.xib in Resources */,
+				2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */,
 				2B2ECF8F1B62AEB500CA6E48 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +309,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2ECF8A1B62AEB500CA6E48 /* ViewController.m in Sources */,
+				2B2ECFD61B62C43200CA6E48 /* MZLAccessory.m in Sources */,
 				2B2ECF871B62AEB500CA6E48 /* AppDelegate.m in Sources */,
+				2B2ECFE01B62DBFE00CA6E48 /* MZLMonster.m in Sources */,
+				2B2ECFD01B62C41C00CA6E48 /* MZLWeapon.m in Sources */,
+				2B2ECFB01B62BAB400CA6E48 /* MZLPlayer.m in Sources */,
+				2B2ECFD31B62C42800CA6E48 /* MZLArmor.m in Sources */,
 				2B2ECF841B62AEB500CA6E48 /* main.m in Sources */,
+				2B2ECFC21B62BB2100CA6E48 /* MZLDungeonFactory.m in Sources */,
+				2B2ECFAA1B62B27800CA6E48 /* MZLGameViewController.m in Sources */,
+				2B8A37631B7A642300D47507 /* MZLShopFactory.m in Sources */,
+				2B66BF1B1B81403900703F7F /* MZLShopViewController.m in Sources */,
+				2B2ECFDD1B62DBF000CA6E48 /* MZLMerchant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +343,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B2ECF8B1B62AEB500CA6E48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B2ECF8C1B62AEB500CA6E48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B2ECF901B62AEB500CA6E48 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,9 +438,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Labyrinthe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +451,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Labyrinthe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -416,6 +513,7 @@
 				2B2ECFA31B62AEB500CA6E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B2ECFA41B62AEB500CA6E48 /* Build configuration list for PBXNativeTarget "LabyrintheTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +522,7 @@
 				2B2ECFA61B62AEB500CA6E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

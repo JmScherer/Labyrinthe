@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MZLGameViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    MZLGameViewController *mvc = [[MZLGameViewController alloc] init];
+    
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:mvc];
+    
+    self.window.rootViewController = navc;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
+    navc.navigationBarHidden = YES;
+    
     return YES;
 }
 
