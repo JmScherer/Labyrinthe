@@ -28,7 +28,7 @@
         /* Game Weapons */
         
         MZLWeapon *brokenSword = [[MZLWeapon alloc] init];
-        brokenSword.weaponCost = 0;
+        brokenSword.weaponCost = 30;
         brokenSword.weaponDamage = 2;
         brokenSword.weaponName = @"Broken Sword";
         

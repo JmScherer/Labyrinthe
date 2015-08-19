@@ -49,6 +49,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *userAttackAmountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *userAccessoryNameLabel;
 
+// IBOutlet - Purchase Indicators
+@property (weak, nonatomic) IBOutlet UILabel *purchaseWeaponIndicator;
+@property (strong, nonatomic) IBOutlet UIView *purchaseArmorIndicator;
+
 // IBAction Methods - Merchant
 
 - (IBAction)buyItemButton:(id)sender;

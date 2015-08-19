@@ -22,6 +22,7 @@
 // Merchant/Combat Indicator
 
 @property (nonatomic) BOOL merchantEncounter;
+@property (weak, nonatomic) IBOutlet UILabel *monsterFight;
 
 // Item & Monster Directories
 
@@ -51,6 +52,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *monsterNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monsterHealthLabel;
+@property (weak, nonatomic) IBOutlet UILabel *monsterMaxHealthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monsterAttackLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monsterDefenseLabel;
 

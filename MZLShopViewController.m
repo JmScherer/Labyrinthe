@@ -15,6 +15,11 @@
 @property (nonatomic, strong) MZLShopFactory *shop;
 @property (nonatomic, strong) MZLMerchant *merchant;
 
+@property (nonatomic) BOOL selectedWeapon;
+@property (nonatomic) BOOL selectedArmor;
+@property (nonatomic) BOOL selectedAccessory;
+@property (nonatomic) BOOL selectedHealthPotion;
+
 @end
 
 @implementation MZLShopViewController
@@ -52,13 +57,26 @@
 
 -(void)updateScreen {
     
-    //NSLog(@"Merchant Weapon: %@", self.merchant.merchantWeapon.weaponName);
-    //NSLog(@"Merchant Armor: %@", self.merchant.merchantArmor.armorName);
+    /* Merchant */
+    
+    // Merchant Button Labels
     
     [self.merchantWeaponSelectButtonLabel setTitle:self.merchant.merchantWeapon.weaponName forState:UIControlStateNormal];
     [self.merchantArmorSelectButtonLabel setTitle:self.merchant.merchantArmor.armorName forState:UIControlStateNormal];
     [self.merchantAccessorySelectButtonLabel setTitle:self.merchant.merchantAccessoryFirst.accessoryName forState:UIControlStateNormal];
     [self.merchantHealthPotionButtonLabel setTitle:self.merchant.merchantHealthPotion.accessoryName forState:UIControlStateNormal];
+    
+    // Merchant Purchase Indicators
+    
+    self.purchaseArmorIndicator.hidden = YES;
+    self.purchaseWeaponIndicator.hidden = YES;
+    
+    // Merchant Selected Items
+    
+    self.selectedArmor = NO;
+    self.selectedHealthPotion = NO;
+    self.selectedAccessory = NO;
+    self.selectedWeapon = NO;
     
     /* User Stats */
     
@@ -78,6 +96,22 @@
 
 - (IBAction)buyItemButton:(id)sender {
     
+    if(self.selectedWeapon == YES && self.player.playerGold >= self.merchant.merchantWeapon.weaponCost) {
+        
+        self.player.playerGold = self.player.playerGold - self.merchant.merchantWeapon.weaponCost;
+        self.player.playerWeapon = self.merchant.merchantWeapon;
+        
+    }
+    
+    if (self.selectedArmor == YES && self.player.playerGold >= self.merchant.merchantArmor.armorCost) {
+        
+        self.player.playerGold = self.player.playerGold - self.merchant.merchantArmor.armorCost;
+        self.player.playerArmor = self.merchant.merchantArmor;
+        
+    }
+    
+    [self updateScreen];
+    
 }
 
 - (IBAction)leaveStoreButton:(id)sender {
@@ -93,31 +127,27 @@
 
 - (IBAction)buyWeaponButton:(id)sender {
 
-    NSLog(@"Before: %@", self.player.playerWeapon.weaponName);
-    
-    self.player.playerWeapon = self.merchant.merchantWeapon;
-   
-    NSLog(@"After: %@", self.player.playerWeapon.weaponName);
-    
     [self updateScreen];
+    
+    self.purchaseWeaponIndicator.hidden = NO;
+    
+    self.selectedWeapon = YES;
     
 }
 
 - (IBAction)buyArmorButton:(id)sender {
-    
-    NSLog(@"Before: %@", self.player.playerArmor.armorName);
-    
-    self.player.playerArmor = self.merchant.merchantArmor;
-    
-    NSLog(@"After: %@", self.player.playerArmor.armorName);
-    
+
     [self updateScreen];
+    
+    self.purchaseArmorIndicator.hidden = NO;
+    
+    self.selectedArmor = YES;
+
     
 }
 
 - (IBAction)buyAccessoryButton:(id)sender {
-    
-    
+
 }
 
 - (IBAction)buyHealthPotionButton:(id)sender {

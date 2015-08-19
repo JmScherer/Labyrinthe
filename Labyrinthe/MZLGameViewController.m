@@ -60,6 +60,8 @@
     
     self.monster = self.monsterBlock[0];
     
+    self.monsterMaxHealthLabel.text = [NSString stringWithFormat:@"%d", self.monster.monsterHealth];
+    
     self.view.hidden = YES;
     
     
@@ -131,6 +133,18 @@
     self.monsterDefenseLabel.text = [NSString stringWithFormat:@"%d", self.monster.monsterDefense];
     self.monsterNameLabel.text = self.monster.monsterName;
     
+    // Which Monster in cycle?
+    
+    if(self.creatureCounter == 0) {
+        self.monsterFight.text = @"1st Monster";
+    }
+    if(self.creatureCounter == 1) {
+        self.monsterFight.text = @"2nd Monster";
+    }
+    if(self.creatureCounter == 2) {
+        self.monsterFight.text = @"3rd Monster";
+    }
+    
     
 }
 
@@ -144,6 +158,7 @@
         
         self.monster = self.monsterBlock[self.creatureCounter];
         
+        self.monsterMaxHealthLabel.text = [NSString stringWithFormat:@"%d", self.monster.monsterHealth];
     }
     
     else {
