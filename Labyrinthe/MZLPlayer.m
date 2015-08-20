@@ -17,9 +17,9 @@
     
     if(self) {
         
-        _playerHealthCurrent = 50;
-        _playerHealthMaximum = 50;
-        _playerGold = 50;
+        _playerHealthCurrent = 10;
+        _playerHealthMaximum = 10;
+        _playerGold = 35;
         
     }
     

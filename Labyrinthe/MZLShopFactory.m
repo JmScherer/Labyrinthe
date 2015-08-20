@@ -28,17 +28,17 @@
         /* Game Weapons */
         
         MZLWeapon *brokenSword = [[MZLWeapon alloc] init];
-        brokenSword.weaponCost = 30;
+        brokenSword.weaponCost = 20;
         brokenSword.weaponDamage = 2;
         brokenSword.weaponName = @"Broken Sword";
         
         MZLWeapon *woodSword = [[MZLWeapon alloc] init];
-        woodSword.weaponCost = 0;
+        woodSword.weaponCost = 25;
         woodSword.weaponDamage = 3;
         woodSword.weaponName = @"Wood Sword";
         
         MZLWeapon *dullSword = [[MZLWeapon alloc] init];
-        dullSword.weaponCost = 0;
+        dullSword.weaponCost = 30;
         dullSword.weaponDamage = 5;
         dullSword.weaponName = @"Dull Sword";
         

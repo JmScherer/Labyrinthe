@@ -66,10 +66,21 @@
     [self.merchantAccessorySelectButtonLabel setTitle:self.merchant.merchantAccessoryFirst.accessoryName forState:UIControlStateNormal];
     [self.merchantHealthPotionButtonLabel setTitle:self.merchant.merchantHealthPotion.accessoryName forState:UIControlStateNormal];
     
+    [self.merchantWeaponSelectButtonLabel setTintColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]];
+    [self.merchantArmorSelectButtonLabel setTintColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]];
+    [self.merchantHealthPotionButtonLabel setTintColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]];
+    [self.merchantAccessorySelectButtonLabel setTintColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]];
+    
     // Merchant Purchase Indicators
     
-    self.purchaseArmorIndicator.hidden = YES;
-    self.purchaseWeaponIndicator.hidden = YES;
+    self.purchaseArmorIndicator1.hidden = YES;
+    self.purchaseArmorIndicator2.hidden = YES;
+    self.purchaseWeaponIndicator1.hidden = YES;
+    self.purchaseWeaponIndicator2.hidden = YES;
+    self.purchaseAccessoryIndicator1.hidden = YES;
+    self.purchaseAccessoryIndicator2.hidden = YES;
+    self.purchasePotionIndicator1.hidden = YES;
+    self.purchasePotionIndicator2.hidden = YES;
     
     // Merchant Selected Items
     
@@ -77,6 +88,16 @@
     self.selectedHealthPotion = NO;
     self.selectedAccessory = NO;
     self.selectedWeapon = NO;
+    
+    // Check for Accessory or Potion
+    
+    if(self.merchant.merchantHealthPotion == NULL) {
+        self.merchantHealthPotionButtonLabel.enabled = NO;
+    }
+    
+    if(self.merchant.merchantAccessoryFirst == NULL) {
+        self.merchantAccessorySelectButtonLabel.enabled = NO;
+    }
     
     /* User Stats */
     
@@ -129,7 +150,10 @@
 
     [self updateScreen];
     
-    self.purchaseWeaponIndicator.hidden = NO;
+    [self.merchantWeaponSelectButtonLabel setTintColor:[UIColor blackColor]];
+    
+    self.purchaseWeaponIndicator1.hidden = NO;
+    self.purchaseWeaponIndicator2.hidden = NO;
     
     self.selectedWeapon = YES;
     
@@ -139,7 +163,10 @@
 
     [self updateScreen];
     
-    self.purchaseArmorIndicator.hidden = NO;
+    [self.merchantArmorSelectButtonLabel setTintColor:[UIColor blackColor]];
+    
+    self.purchaseArmorIndicator1.hidden = NO;
+    self.purchaseArmorIndicator2.hidden = NO;
     
     self.selectedArmor = YES;
 
@@ -148,10 +175,23 @@
 
 - (IBAction)buyAccessoryButton:(id)sender {
 
+    [self updateScreen];
+    
+    [self.merchantAccessorySelectButtonLabel setTintColor:[UIColor blackColor]];
+    
+    self.purchaseAccessoryIndicator1.hidden = NO;
+    self.purchaseAccessoryIndicator2.hidden = NO;
+    
 }
 
 - (IBAction)buyHealthPotionButton:(id)sender {
     
+    [self updateScreen];
+    
+    [self.merchantHealthPotionButtonLabel setTintColor:[UIColor blackColor]];
+    
+    self.purchasePotionIndicator1.hidden = NO;
+    self.purchasePotionIndicator2.hidden = NO;
     
 }
 

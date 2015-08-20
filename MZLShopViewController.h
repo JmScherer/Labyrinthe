@@ -50,8 +50,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *userAccessoryNameLabel;
 
 // IBOutlet - Purchase Indicators
-@property (weak, nonatomic) IBOutlet UILabel *purchaseWeaponIndicator;
-@property (strong, nonatomic) IBOutlet UIView *purchaseArmorIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *purchaseWeaponIndicator1;
+@property (weak, nonatomic) IBOutlet UILabel *purchaseWeaponIndicator2;
+@property (strong, nonatomic) IBOutlet UIView *purchaseArmorIndicator1;
+@property (weak, nonatomic) IBOutlet UILabel *purchaseArmorIndicator2;
+@property (weak, nonatomic) IBOutlet UILabel *purchaseAccessoryIndicator1;
+@property (weak, nonatomic) IBOutlet UILabel *purchaseAccessoryIndicator2;
+@property (weak, nonatomic) IBOutlet UILabel *purchasePotionIndicator1;
+@property (weak, nonatomic) IBOutlet UILabel *purchasePotionIndicator2;
+
 
 // IBAction Methods - Merchant
 

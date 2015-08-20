@@ -12,6 +12,8 @@
 
 @property (nonatomic, readonly) NSArray *monsterDirectory;
 
+-(int)getRandomNumberBetween:(int)from to:(int)to;
+
 @end
 
 @implementation MZLDungeonFactory
@@ -506,13 +508,19 @@
     
 }
 
+-(int)getRandomNumberBetween:(int)from to:(int)to {
+    
+    return (int)from + arc4random() % (to-from+1);
+    
+}
+
 -(NSMutableArray *)monsterBlockNewGame {
     
     _monsterBlock = [[NSMutableArray alloc] init];
     
     MZLMonster *monster1 = self.monsterDirectory[0];
-    MZLMonster *monster2 = self.monsterDirectory[1];
-    MZLMonster *monster3 = self.monsterDirectory[2];
+    MZLMonster *monster2 = self.monsterDirectory[0];
+    MZLMonster *monster3 = self.monsterDirectory[0];
     
     NSArray *randomize = [[NSArray alloc] initWithObjects:monster1, monster2, monster3, nil];
     
