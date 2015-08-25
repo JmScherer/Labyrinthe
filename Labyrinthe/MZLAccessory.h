@@ -12,5 +12,7 @@
 
 @property (weak, nonatomic) NSString *accessoryName;
 @property (weak, nonatomic) NSString *accessoryEffect;
+@property (nonatomic) int accessoryCost;
+@property (nonatomic) int accessoryPotionRestore;
 
 @end

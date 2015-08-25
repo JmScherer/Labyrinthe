@@ -13,7 +13,7 @@
 @property (nonatomic) NSArray *merchantWeaponDirectory;
 @property (nonatomic) NSArray *merchantArmorDirectory;
 @property (nonatomic) NSArray *merchantAccessoryFirstDirectory;
-@property (nonatomic) NSArray *merchantAccessorySecondDirectory;
+@property (nonatomic) NSArray *merchantHealthPotionDirectory;
 
 @end
 
@@ -157,17 +157,17 @@
         /* Game Armor */
         
         MZLArmor *brokenShield = [[MZLArmor alloc] init];
-        brokenShield.armorCost = 0;
+        brokenShield.armorCost = 20;
         brokenShield.armorDefense = 1;
         brokenShield.armorName = @"Broken Shield";
         
         MZLArmor *woodShield = [[MZLArmor alloc] init];
-        woodShield.armorCost = 0;
+        woodShield.armorCost = 25;
         woodShield.armorDefense = 1;
         woodShield.armorName = @"Wood Shield";
         
         MZLArmor *stoneShield = [[MZLArmor alloc] init];
-        stoneShield.armorCost = 0;
+        stoneShield.armorCost = 30;
         stoneShield.armorDefense = 1;
         stoneShield.armorName = @"Stone Shield";
         
@@ -283,6 +283,32 @@
         
         _merchantArmorDirectory = [[NSArray alloc] initWithObjects:brokenShield, woodShield, stoneShield, roundShield, copperShield, tinShield, bronzeShield, ironShield, steelShield, silverShield, goldShield, platinumShield, cobaltShield, mithrilShield , adamantiteShield, titaniumShield, diamondShield, stormShield, dragonShield, tortoiseShield, demonShield, runedKiteShield, riseOfThePhoenix, eyelessWall, aegisOfTheGods, nil];
         
+        MZLAccessory *smallHealthPotion = [[MZLAccessory alloc] init];
+        smallHealthPotion.accessoryName = @"Small Potion";
+        smallHealthPotion.accessoryEffect = @"Purchase to restore some health!";
+        smallHealthPotion.accessoryCost = 5;
+        smallHealthPotion.accessoryPotionRestore = 8;
+        
+        MZLAccessory *mediumHealthPotion = [[MZLAccessory alloc] init];
+        mediumHealthPotion.accessoryName = @"Medium Potion";
+        mediumHealthPotion.accessoryEffect = @"Purchase to restore more health!";
+        mediumHealthPotion.accessoryCost = 5;
+        mediumHealthPotion.accessoryPotionRestore = 16;
+        
+        MZLAccessory *largeHealthPotion = [[MZLAccessory alloc] init];
+        largeHealthPotion.accessoryName = @"Large Potion";
+        largeHealthPotion.accessoryEffect = @"Potion restores a lot of health";
+        largeHealthPotion.accessoryCost = 5;
+        largeHealthPotion.accessoryPotionRestore = 32;
+        
+        MZLAccessory *xHealthPotion = [[MZLAccessory alloc] init];
+        xHealthPotion.accessoryName = @"X Potion";
+        xHealthPotion.accessoryEffect = @"Potion restores full health";
+        xHealthPotion.accessoryPotionRestore = 1000;
+        xHealthPotion.accessoryCost = 5;
+        
+        _merchantHealthPotionDirectory = [[NSArray alloc] initWithObjects:smallHealthPotion, mediumHealthPotion, largeHealthPotion, xHealthPotion, nil];
+        
     }
     
     return self;
@@ -292,10 +318,29 @@
 
     MZLMerchant *merchant = [[MZLMerchant alloc] init];
     
+    if(block <= 24){
+    
     merchant.merchantWeapon = self.merchantWeaponDirectory[block];
     merchant.merchantArmor = self.merchantArmorDirectory[block];
     merchant.merchantAccessoryFirst = nil;
-    merchant.merchantHealthPotion = nil;
+    }
+    
+    else {
+        merchant.merchantWeapon = self.merchantHealthPotionDirectory[24];
+        merchant.merchantArmor = self.merchantArmorDirectory[24];
+        merchant.merchantAccessoryFirst = nil;
+    }
+    
+    // Determine available potion
+    
+    if (block <= 7)
+        merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[0];
+    else if (block >= 8 && block <= 14)
+        merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[1];
+    else if (block >= 15 && block <= 20)
+        merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[2];
+    else
+        merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[3];
     
     return merchant;
     

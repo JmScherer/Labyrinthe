@@ -47,27 +47,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
-    NSLog(@"%@", self.monster.monsterName);
-    
-    self.monster = self.monsterBlock[1];
-
-    NSLog(@"%@", self.monster.monsterName);
-    
-    self.monster = self.monsterBlock[2];
-    
-    NSLog(@"%@", self.monster.monsterName);
     
     self.monster = self.monsterBlock[0];
     
-    self.monsterMaxHealthLabel.text = [NSString stringWithFormat:@"%d", self.monster.monsterHealth];
-    
     self.view.hidden = YES;
-    
     
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    
+    self.monsterMaxHealthLabel.text = [NSString stringWithFormat:@"%d", self.monster.monsterHealth];
     
     [self updateScreen];
 
@@ -174,27 +163,6 @@
         
         self.merchantEncounter = YES;
         
-        // Just testing to see what monsters come up and how they're randomized
-        
-        /*
-        self.monster = self.monsterBlock[0];
-        
-        NSLog(@"%@", self.monster.monsterName);
-        
-        self.monster = self.monsterBlock[1];
-        
-        NSLog(@"%@", self.monster.monsterName);
-        
-        self.monster = self.monsterBlock[2];
-        
-        NSLog(@"%@", self.monster.monsterName);
-        
-        // Here's where the monster gets assigned for real
-        
-        self.monster = self.monsterBlock[self.creatureCounter];
-         
-         */
-        
     }
 }
 
@@ -296,6 +264,8 @@
         
         NSLog(@"Monster Died: %@", self.monster.monsterName);
         
+        self.player.playerGold += self.monster.monsterGold;
+        
         self.floorCounter++;
         
         [self newFloor];
@@ -329,22 +299,6 @@
     self.merchantEncounter = YES;
     self.player = [self.factory player];
     self.monsterBlock = [self.factory monsterBlockNewGame];
-    
-    // Just testing to see what monsters come up and how they're randomized
-    
-    self.monster = self.monsterBlock[0];
-    
-    NSLog(@"%@", self.monster.monsterName);
-    
-    self.monster = self.monsterBlock[1];
-    
-    NSLog(@"%@", self.monster.monsterName);
-    
-    self.monster = self.monsterBlock[2];
-    
-    NSLog(@"%@", self.monster.monsterName);
-    
-    // Here's where the monster gets assigned for real
     
     self.monster = self.monsterBlock[0];
     

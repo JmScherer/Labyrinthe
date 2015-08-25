@@ -61,8 +61,8 @@
     
     // Merchant Button Labels
     
-    [self.merchantWeaponSelectButtonLabel setTitle:self.merchant.merchantWeapon.weaponName forState:UIControlStateNormal];
-    [self.merchantArmorSelectButtonLabel setTitle:self.merchant.merchantArmor.armorName forState:UIControlStateNormal];
+    [self.merchantWeaponSelectButtonLabel setTitle:[NSString stringWithFormat:@"%@ (%d)", self.merchant.merchantWeapon.weaponName, self.merchant.merchantWeapon.weaponCost] forState:UIControlStateNormal];
+    [self.merchantArmorSelectButtonLabel setTitle:[NSString stringWithFormat:@"%@ (%d)", self.merchant.merchantArmor.armorName, self.merchant.merchantArmor.armorCost] forState:UIControlStateNormal];
     [self.merchantAccessorySelectButtonLabel setTitle:self.merchant.merchantAccessoryFirst.accessoryName forState:UIControlStateNormal];
     [self.merchantHealthPotionButtonLabel setTitle:self.merchant.merchantHealthPotion.accessoryName forState:UIControlStateNormal];
     
@@ -131,6 +131,18 @@
         
     }
     
+    if (self.selectedHealthPotion == YES && self.player.playerGold >= self.merchant.merchantHealthPotion.accessoryCost && self.player.playerHealthCurrent < self.player.playerHealthMaximum) {
+        
+        
+        self.player.playerGold = self.player.playerGold - self.merchant.merchantHealthPotion.accessoryCost;
+        self.player.playerHealthCurrent += self.merchant.merchantHealthPotion.accessoryPotionRestore;
+        
+        if (self.player.playerHealthCurrent > self.player.playerHealthMaximum) {
+            self.player.playerHealthCurrent = self.player.playerHealthMaximum;
+        }
+        
+    }
+    
     [self updateScreen];
     
 }
@@ -192,6 +204,8 @@
     
     self.purchasePotionIndicator1.hidden = NO;
     self.purchasePotionIndicator2.hidden = NO;
+    
+    self.selectedHealthPotion = YES;
     
 }
 

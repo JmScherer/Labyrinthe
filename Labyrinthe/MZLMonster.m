@@ -22,6 +22,8 @@
     monsterCopy.monsterImage = copy.monsterImage;
     monsterCopy.monsterName = copy.monsterName;
     
+    NSLog(@"%@ Stats - Dmg: %d, Def: %d, HP: %d, Gold: %d",monsterCopy.monsterName, monsterCopy.monsterDamage, monsterCopy.monsterDefense, monsterCopy.monsterHealth, monsterCopy.monsterGold);
+    
     return monsterCopy;
 }
 
