@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZLGameViewController">
             <connections>
+                <outlet property="accyEvilEye" destination="sna-PV-BaC" id="V8y-mH-yIp"/>
+                <outlet property="accyStoneRing" destination="KSH-B7-WdC" id="SWr-Xd-t4f"/>
                 <outlet property="combatAttackButtonLabel" destination="Mbb-03-aSg" id="P7K-og-8l0"/>
                 <outlet property="floorCounterLabel" destination="d9g-YR-qhx" id="xiR-Bq-GJf"/>
                 <outlet property="floorCounterStaticLabel" destination="2Wi-Hv-b8r" id="Rvb-dL-RAT"/>
@@ -421,6 +423,44 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tyre.png" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-B7-WdC">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="TYn-YU-4mJ"/>
+                        <constraint firstAttribute="height" constant="25" id="fU9-ha-663"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TYn-YU-4mJ"/>
+                            <exclude reference="fU9-ha-663"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="TYn-YU-4mJ"/>
+                            <include reference="fU9-ha-663"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bleeding-eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="sna-PV-BaC">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Hhw-oj-IgK"/>
+                        <constraint firstAttribute="height" constant="25" id="OdO-tI-c4o"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hhw-oj-IgK"/>
+                            <exclude reference="OdO-tI-c4o"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Hhw-oj-IgK"/>
+                            <include reference="OdO-tI-c4o"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -458,6 +498,7 @@
                 <constraint firstItem="Yyj-bN-ZdI" firstAttribute="top" secondItem="Aj4-kn-utM" secondAttribute="bottom" constant="8" id="ZpT-vo-0pR"/>
                 <constraint firstItem="Yyj-bN-ZdI" firstAttribute="top" secondItem="0ho-OB-wQP" secondAttribute="bottom" constant="8" id="cbY-eP-0bn"/>
                 <constraint firstItem="SKA-s6-KRl" firstAttribute="top" secondItem="kPJ-Ur-G1l" secondAttribute="bottom" constant="8" id="cuh-T4-lgF"/>
+                <constraint firstAttribute="bottom" secondItem="KSH-B7-WdC" secondAttribute="bottom" constant="6" id="dJr-xF-Zt2"/>
                 <constraint firstItem="kPJ-Ur-G1l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dyZ-0F-6en"/>
                 <constraint firstItem="3fm-wn-gb4" firstAttribute="top" secondItem="2Wi-Hv-b8r" secondAttribute="bottom" constant="8" id="eip-kP-ymD"/>
                 <constraint firstItem="1dE-Q9-VGF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="ekk-ik-mHf"/>
@@ -466,9 +507,11 @@
                 <constraint firstItem="c9D-3e-i0S" firstAttribute="leading" secondItem="1dE-Q9-VGF" secondAttribute="trailing" constant="8" id="gbX-OL-Mr4"/>
                 <constraint firstItem="LNw-xB-RXL" firstAttribute="leading" secondItem="SCQ-CH-k3C" secondAttribute="trailing" constant="19" id="gwe-Nc-J9V"/>
                 <constraint firstItem="raB-k9-8H8" firstAttribute="leading" secondItem="Aj4-kn-utM" secondAttribute="trailing" constant="8" id="hZt-v5-vDn"/>
+                <constraint firstItem="sna-PV-BaC" firstAttribute="leading" secondItem="KSH-B7-WdC" secondAttribute="trailing" constant="27" id="haK-am-9vr"/>
                 <constraint firstAttribute="trailing" secondItem="nfg-h5-WD2" secondAttribute="trailing" constant="8" id="ljN-PC-mJH"/>
                 <constraint firstItem="LSY-Sp-41O" firstAttribute="leading" secondItem="0Ul-8r-F28" secondAttribute="trailing" constant="8" id="nuF-s4-yBi"/>
                 <constraint firstItem="XVY-Xm-g2q" firstAttribute="leading" secondItem="c9D-3e-i0S" secondAttribute="trailing" constant="8" id="nwS-wc-hfq"/>
+                <constraint firstAttribute="bottom" secondItem="sna-PV-BaC" secondAttribute="bottom" constant="6" id="q4l-Fg-htK"/>
                 <constraint firstItem="pIp-TG-4oR" firstAttribute="top" secondItem="Yyj-bN-ZdI" secondAttribute="bottom" constant="8" id="qjN-ln-ZOa"/>
                 <constraint firstItem="c9D-3e-i0S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="qnG-t5-SEv"/>
                 <constraint firstItem="XVY-Xm-g2q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="r0h-KI-H88"/>
@@ -488,6 +531,7 @@
                 <constraint firstItem="xaT-Cg-erh" firstAttribute="top" secondItem="d9g-YR-qhx" secondAttribute="bottom" constant="8" id="y7n-bR-aHA"/>
                 <constraint firstItem="efI-PB-UbJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="91" id="ywt-K7-vdn"/>
                 <constraint firstAttribute="trailing" secondItem="xaT-Cg-erh" secondAttribute="trailing" constant="4" id="zLH-bc-AL0"/>
+                <constraint firstAttribute="trailing" secondItem="sna-PV-BaC" secondAttribute="trailing" constant="24" id="zlD-QS-0fg"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
@@ -520,6 +564,8 @@
                     <exclude reference="efI-PB-UbJ"/>
                     <exclude reference="c9D-3e-i0S"/>
                     <exclude reference="XVY-Xm-g2q"/>
+                    <exclude reference="KSH-B7-WdC"/>
+                    <exclude reference="sna-PV-BaC"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="Joy-ju-wEg"/>
@@ -580,6 +626,10 @@
                     <exclude reference="zLH-bc-AL0"/>
                     <exclude reference="CNa-oc-qWq"/>
                     <exclude reference="EPv-8M-ijk"/>
+                    <exclude reference="dJr-xF-Zt2"/>
+                    <exclude reference="haK-am-9vr"/>
+                    <exclude reference="q4l-Fg-htK"/>
+                    <exclude reference="zlD-QS-0fg"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -613,6 +663,8 @@
                     <include reference="efI-PB-UbJ"/>
                     <include reference="c9D-3e-i0S"/>
                     <include reference="XVY-Xm-g2q"/>
+                    <include reference="KSH-B7-WdC"/>
+                    <include reference="sna-PV-BaC"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="Joy-ju-wEg"/>
@@ -673,9 +725,17 @@
                     <include reference="zLH-bc-AL0"/>
                     <include reference="CNa-oc-qWq"/>
                     <include reference="EPv-8M-ijk"/>
+                    <include reference="dJr-xF-Zt2"/>
+                    <include reference="haK-am-9vr"/>
+                    <include reference="q4l-Fg-htK"/>
+                    <include reference="zlD-QS-0fg"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="251" y="379"/>
         </view>
     </objects>
+    <resources>
+        <image name="bleeding-eye.png" width="512" height="512"/>
+        <image name="tyre.png" width="512" height="512"/>
+    </resources>
 </document>

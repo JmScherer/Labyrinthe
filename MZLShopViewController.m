@@ -61,7 +61,7 @@
     
     // Merchant Button Labels
     
-    [self.merchantWeaponSelectButtonLabel setTitle:[NSString stringWithFormat:@"%@ (%d)", self.merchant.merchantWeapon.weaponName, self.merchant.merchantWeapon.weaponCost] forState:UIControlStateNormal];
+    [self.merchantWeaponSelectButtonLabel setTitle:[NSString stringWithFormat:@"(%d) %@", self.merchant.merchantWeapon.weaponCost, self.merchant.merchantWeapon.weaponName] forState:UIControlStateNormal];
     [self.merchantArmorSelectButtonLabel setTitle:[NSString stringWithFormat:@"%@ (%d)", self.merchant.merchantArmor.armorName, self.merchant.merchantArmor.armorCost] forState:UIControlStateNormal];
     [self.merchantAccessorySelectButtonLabel setTitle:self.merchant.merchantAccessoryFirst.accessoryName forState:UIControlStateNormal];
     [self.merchantHealthPotionButtonLabel setTitle:self.merchant.merchantHealthPotion.accessoryName forState:UIControlStateNormal];
@@ -113,6 +113,11 @@
     self.userWeaponNameLabel.text = self.player.playerWeapon.weaponName;
     self.userAccessoryNameLabel.text = self.player.playerAccessory.accessoryName;
     
+    // Player Accessory Indicators
+    
+    self.accyEvilEye.hidden = YES;
+    self.accyStoneRing.hidden = YES;
+    
 }
 
 - (IBAction)buyItemButton:(id)sender {
@@ -140,6 +145,13 @@
         if (self.player.playerHealthCurrent > self.player.playerHealthMaximum) {
             self.player.playerHealthCurrent = self.player.playerHealthMaximum;
         }
+        
+    }
+    
+    if (self.selectedAccessory == YES) {
+        
+        self.player.playerGold = self.player.playerGold - self.merchant.merchantAccessoryFirst.accessoryCost;
+        self.player.playerAccessory = self.merchant.merchantAccessoryFirst;
         
     }
     
@@ -193,6 +205,8 @@
     
     self.purchaseAccessoryIndicator1.hidden = NO;
     self.purchaseAccessoryIndicator2.hidden = NO;
+    
+    self.selectedAccessory = YES;
     
 }
 

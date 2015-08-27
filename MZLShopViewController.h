@@ -59,6 +59,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *purchasePotionIndicator1;
 @property (weak, nonatomic) IBOutlet UILabel *purchasePotionIndicator2;
 
+// Accessory Icons - Player
+
+@property (weak, nonatomic) IBOutlet UIImageView *accyStoneRing;
+@property (weak, nonatomic) IBOutlet UIImageView *accyEvilEye;
+
+
 
 // IBAction Methods - Merchant
 

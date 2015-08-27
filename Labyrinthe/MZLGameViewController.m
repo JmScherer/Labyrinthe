@@ -112,6 +112,11 @@
     self.userWeaponNameLabel.text = self.player.playerWeapon.weaponName;
     self.userAccessoryNameLabel.text = self.player.playerAccessory.accessoryName;
     
+    // User Equipment - Accessory Icons
+    
+    self.accyStoneRing.hidden = YES;
+    self.accyEvilEye.hidden = YES;
+    
     /* Combat */
     
     // Monster Stat Labels
@@ -133,7 +138,6 @@
     if(self.creatureCounter == 2) {
         self.monsterFight.text = @"3rd Monster";
     }
-    
     
 }
 
@@ -244,7 +248,7 @@
         [self resetGame];
         
     }
-}
+}  
 
 # pragma mark - Shop Controller Delegate Method
 

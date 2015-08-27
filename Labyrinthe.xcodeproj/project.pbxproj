@@ -24,6 +24,8 @@
 		2B66BF1B1B81403900703F7F /* MZLShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66BF191B81403900703F7F /* MZLShopViewController.m */; };
 		2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */; };
 		2B8A37631B7A642300D47507 /* MZLShopFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A37621B7A642300D47507 /* MZLShopFactory.m */; };
+		2BFA7DF41B8D3D6B00B0DBFD /* tyre.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */; };
+		2BFA7DF61B8D3D7300B0DBFD /* bleeding-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MZLShopViewController.xib; path = ../MZLShopViewController.xib; sourceTree = "<group>"; };
 		2B8A37611B7A642300D47507 /* MZLShopFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLShopFactory.h; sourceTree = "<group>"; };
 		2B8A37621B7A642300D47507 /* MZLShopFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLShopFactory.m; sourceTree = "<group>"; };
+		2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyre.png; sourceTree = "<group>"; };
+		2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bleeding-eye.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2ECF801B62AEB500CA6E48 /* Labyrinthe */,
+				2BFA7DF71B8D3D7800B0DBFD /* images */,
 				2B2ECF9A1B62AEB500CA6E48 /* LabyrintheTests */,
 				2B2ECF7F1B62AEB500CA6E48 /* Products */,
 			);
@@ -207,6 +212,16 @@
 			name = Player;
 			sourceTree = "<group>";
 		};
+		2BFA7DF71B8D3D7800B0DBFD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */,
+				2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */,
+			);
+			name = images;
+			path = Labyrinthe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,9 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2ECF921B62AEB500CA6E48 /* LaunchScreen.xib in Resources */,
+				2BFA7DF41B8D3D6B00B0DBFD /* tyre.png in Resources */,
 				2B2ECFAB1B62B27800CA6E48 /* MZLGameViewController.xib in Resources */,
 				2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */,
 				2B2ECF8F1B62AEB500CA6E48 /* Images.xcassets in Resources */,
+				2BFA7DF61B8D3D7300B0DBFD /* bleeding-eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

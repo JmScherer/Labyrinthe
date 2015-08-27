@@ -12,7 +12,7 @@
 
 @property (nonatomic) NSArray *merchantWeaponDirectory;
 @property (nonatomic) NSArray *merchantArmorDirectory;
-@property (nonatomic) NSArray *merchantAccessoryFirstDirectory;
+@property (nonatomic) NSArray *merchantAccessoryDirectory;
 @property (nonatomic) NSArray *merchantHealthPotionDirectory;
 
 @end
@@ -309,6 +309,54 @@
         
         _merchantHealthPotionDirectory = [[NSArray alloc] initWithObjects:smallHealthPotion, mediumHealthPotion, largeHealthPotion, xHealthPotion, nil];
         
+        MZLAccessory *accessoryGauntlet = [[MZLAccessory alloc] init];
+        accessoryGauntlet.accessoryEffect = @"Increases attack power";
+        accessoryGauntlet.accessoryName = @"Gauntlet";
+        
+        MZLAccessory *accessoryPendant = [[MZLAccessory alloc] init];
+        accessoryPendant.accessoryName = @"Pendant";
+        accessoryPendant.accessoryEffect = @"Permanently increases maximum health points";
+        
+        MZLAccessory *accessoryEarring = [[MZLAccessory alloc] init];
+        accessoryEarring.accessoryName = @"Earring";
+        accessoryEarring.accessoryEffect = @"Health is recovered automatically at the end of battle";
+        
+        MZLAccessory *accessoryBoneBracer = [[MZLAccessory alloc] init];
+        accessoryBoneBracer.accessoryName = @"Bone Bracer";
+        accessoryBoneBracer.accessoryEffect = @"Grants chance of critical strikes, instantly killing opponents";
+        
+        MZLAccessory *accessorySilkSash = [[MZLAccessory alloc] init];
+        accessorySilkSash.accessoryName = @"Silk Sash";
+        accessorySilkSash.accessoryEffect = @"Increases the chance of finding chests";
+        
+        MZLAccessory *accessoryGreaves = [[MZLAccessory alloc] init];
+        accessoryGreaves.accessoryName = @"Greaves";
+        accessoryGreaves.accessoryEffect = @"Reduces enemy encounters by 1";
+        
+        MZLAccessory *accessoryChainVest = [[MZLAccessory alloc] init];
+        accessoryChainVest.accessoryName = @"Chain Vest";
+        accessoryChainVest.accessoryEffect = @"Increases defense power";
+        
+        MZLAccessory *accessoryWoodenCoin = [[MZLAccessory alloc] init];
+        accessoryWoodenCoin.accessoryName = @"Wooden Coin";
+        accessoryWoodenCoin.accessoryEffect = @"Increase amount of gold dropped by enemies";
+        
+        MZLAccessory *accessoryPocketWatch = [[MZLAccessory alloc] init];
+        accessoryPocketWatch.accessoryName = @"Pocket Watch";
+        accessoryPocketWatch.accessoryEffect = @"Mysterious stranger";
+        
+        // Consumable Items
+        
+        MZLAccessory *accessoryStoneRing = [[MZLAccessory alloc] init];
+        accessoryStoneRing.accessoryName = @"Stone Ring";
+        accessoryStoneRing.accessoryEffect = @"Pevents death. Restore to full health when killed. Breaks upon use.";
+        
+        MZLAccessory *accessoryEvilEye = [[MZLAccessory alloc] init];
+        accessoryEvilEye.accessoryName = @"Evil Eye";
+        accessoryEvilEye.accessoryEffect = @"Grants a temporary barrier to player for 75% of maximum health points. Breaks when depleted";
+        
+        _merchantAccessoryDirectory = [[NSArray alloc] initWithObjects:accessoryBoneBracer, accessoryChainVest, accessoryEarring, accessoryEvilEye, accessoryGauntlet, accessoryGreaves, accessoryPendant, accessorySilkSash, accessoryStoneRing, accessoryWoodenCoin, accessoryWoodenCoin, nil];
+        
     }
     
     return self;
@@ -318,22 +366,24 @@
 
     MZLMerchant *merchant = [[MZLMerchant alloc] init];
     
-    if(block <= 24){
-    
     merchant.merchantWeapon = self.merchantWeaponDirectory[block];
     merchant.merchantArmor = self.merchantArmorDirectory[block];
-    merchant.merchantAccessoryFirst = nil;
-    }
+
     
-    else {
-        merchant.merchantWeapon = self.merchantHealthPotionDirectory[24];
-        merchant.merchantArmor = self.merchantArmorDirectory[24];
+    // Choose a random accessory
+    
+    NSUInteger randomIndex = arc4random() % [self.merchantAccessoryDirectory count];
+    if (block <= 4) {
         merchant.merchantAccessoryFirst = nil;
     }
+    else
+        merchant.merchantAccessoryFirst = self.merchantAccessoryDirectory[randomIndex];
     
     // Determine available potion
     
-    if (block <= 7)
+    if(block == 0)
+        merchant.merchantHealthPotion = nil;
+    else if (block <= 7 && block != 0)
         merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[0];
     else if (block >= 8 && block <= 14)
         merchant.merchantHealthPotion = self.merchantHealthPotionDirectory[1];

@@ -45,6 +45,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *userAttackAmountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *userAccessoryNameLabel;
 
+// User - Accessory Icons
+
+@property (weak, nonatomic) IBOutlet UIImageView *accyStoneRing;
+@property (weak, nonatomic) IBOutlet UIImageView *accyEvilEye;
+
+
+
 // IBOutlets - Game Interface - Monster
 @property (weak, nonatomic) IBOutlet UILabel *monsterHealthStaticLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monsterAttackStaticLabel;
@@ -63,9 +70,6 @@
 
 // IBOutlet - UI Button Outlets
 @property (weak, nonatomic) IBOutlet UIButton *combatAttackButtonLabel;
-
-
-
 
 // IBActions - Available Combat Actions - User
 
