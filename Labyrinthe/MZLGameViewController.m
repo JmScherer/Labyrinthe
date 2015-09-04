@@ -114,8 +114,8 @@
     
     // User Equipment - Accessory Icons
     
-    self.accyStoneRing.hidden = YES;
-    self.accyEvilEye.hidden = YES;
+    self.accyStoneRing.hidden = NO;
+    self.accyEvilEye.hidden = NO;
     
     /* Combat */
     

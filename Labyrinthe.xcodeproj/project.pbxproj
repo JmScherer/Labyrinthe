@@ -24,8 +24,34 @@
 		2B66BF1B1B81403900703F7F /* MZLShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66BF191B81403900703F7F /* MZLShopViewController.m */; };
 		2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */; };
 		2B8A37631B7A642300D47507 /* MZLShopFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A37621B7A642300D47507 /* MZLShopFactory.m */; };
-		2BFA7DF41B8D3D6B00B0DBFD /* tyre.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */; };
-		2BFA7DF61B8D3D7300B0DBFD /* bleeding-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */; };
+		2BF735901B90CED1006BFBAB /* bleeding-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735741B90CED1006BFBAB /* bleeding-eye.png */; };
+		2BF735911B90CED1006BFBAB /* boots.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735751B90CED1006BFBAB /* boots.png */; };
+		2BF735921B90CED1006BFBAB /* bracers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735761B90CED1006BFBAB /* bracers.png */; };
+		2BF735931B90CED1006BFBAB /* diamond-ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735771B90CED1006BFBAB /* diamond-ring.png */; };
+		2BF735941B90CED1006BFBAB /* fist.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735781B90CED1006BFBAB /* fist.png */; };
+		2BF735951B90CED1006BFBAB /* gem-chain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735791B90CED1006BFBAB /* gem-chain.png */; };
+		2BF735961B90CED1006BFBAB /* gem-necklace.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357A1B90CED1006BFBAB /* gem-necklace.png */; };
+		2BF735971B90CED1006BFBAB /* gem-pendant.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357B1B90CED1006BFBAB /* gem-pendant.png */; };
+		2BF735981B90CED1006BFBAB /* kimono.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357C1B90CED1006BFBAB /* kimono.png */; };
+		2BF735991B90CED1006BFBAB /* level-four-advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357D1B90CED1006BFBAB /* level-four-advanced.png */; };
+		2BF7359A1B90CED1006BFBAB /* level-four.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357E1B90CED1006BFBAB /* level-four.png */; };
+		2BF7359B1B90CED1006BFBAB /* level-one-advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7357F1B90CED1006BFBAB /* level-one-advanced.png */; };
+		2BF7359C1B90CED1006BFBAB /* level-one.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735801B90CED1006BFBAB /* level-one.png */; };
+		2BF7359D1B90CED1006BFBAB /* level-three-advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735811B90CED1006BFBAB /* level-three-advanced.png */; };
+		2BF7359E1B90CED1006BFBAB /* level-three.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735821B90CED1006BFBAB /* level-three.png */; };
+		2BF7359F1B90CED1006BFBAB /* level-two-advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735831B90CED1006BFBAB /* level-two-advanced.png */; };
+		2BF735A01B90CED1006BFBAB /* level-two.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735841B90CED1006BFBAB /* level-two.png */; };
+		2BF735A11B90CED1006BFBAB /* lightning-shield.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735851B90CED1006BFBAB /* lightning-shield.png */; };
+		2BF735A21B90CED1006BFBAB /* mail-shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735861B90CED1006BFBAB /* mail-shirt.png */; };
+		2BF735A31B90CED1006BFBAB /* mailed-fist.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735871B90CED1006BFBAB /* mailed-fist.png */; };
+		2BF735A41B90CED1006BFBAB /* manacles.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735881B90CED1006BFBAB /* manacles.png */; };
+		2BF735A51B90CED1006BFBAB /* metal-disc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF735891B90CED1006BFBAB /* metal-disc.png */; };
+		2BF735A61B90CED1006BFBAB /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358A1B90CED1006BFBAB /* ring.png */; };
+		2BF735A71B90CED1006BFBAB /* silksash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358B1B90CED1006BFBAB /* silksash.png */; };
+		2BF735A81B90CED1006BFBAB /* steeltoe-boots.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358C1B90CED1006BFBAB /* steeltoe-boots.png */; };
+		2BF735A91B90CED1006BFBAB /* stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358D1B90CED1006BFBAB /* stopwatch.png */; };
+		2BF735AA1B90CED1006BFBAB /* tyre.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358E1B90CED1006BFBAB /* tyre.png */; };
+		2BF735AB1B90CED1006BFBAB /* walking-boot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7358F1B90CED1006BFBAB /* walking-boot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +97,34 @@
 		2B66BF1A1B81403900703F7F /* MZLShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MZLShopViewController.xib; path = ../MZLShopViewController.xib; sourceTree = "<group>"; };
 		2B8A37611B7A642300D47507 /* MZLShopFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLShopFactory.h; sourceTree = "<group>"; };
 		2B8A37621B7A642300D47507 /* MZLShopFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLShopFactory.m; sourceTree = "<group>"; };
-		2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyre.png; sourceTree = "<group>"; };
-		2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bleeding-eye.png"; sourceTree = "<group>"; };
+		2BF735741B90CED1006BFBAB /* bleeding-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bleeding-eye.png"; sourceTree = "<group>"; };
+		2BF735751B90CED1006BFBAB /* boots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots.png; sourceTree = "<group>"; };
+		2BF735761B90CED1006BFBAB /* bracers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bracers.png; sourceTree = "<group>"; };
+		2BF735771B90CED1006BFBAB /* diamond-ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond-ring.png"; sourceTree = "<group>"; };
+		2BF735781B90CED1006BFBAB /* fist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fist.png; sourceTree = "<group>"; };
+		2BF735791B90CED1006BFBAB /* gem-chain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gem-chain.png"; sourceTree = "<group>"; };
+		2BF7357A1B90CED1006BFBAB /* gem-necklace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gem-necklace.png"; sourceTree = "<group>"; };
+		2BF7357B1B90CED1006BFBAB /* gem-pendant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gem-pendant.png"; sourceTree = "<group>"; };
+		2BF7357C1B90CED1006BFBAB /* kimono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kimono.png; sourceTree = "<group>"; };
+		2BF7357D1B90CED1006BFBAB /* level-four-advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-four-advanced.png"; sourceTree = "<group>"; };
+		2BF7357E1B90CED1006BFBAB /* level-four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-four.png"; sourceTree = "<group>"; };
+		2BF7357F1B90CED1006BFBAB /* level-one-advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-one-advanced.png"; sourceTree = "<group>"; };
+		2BF735801B90CED1006BFBAB /* level-one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-one.png"; sourceTree = "<group>"; };
+		2BF735811B90CED1006BFBAB /* level-three-advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-three-advanced.png"; sourceTree = "<group>"; };
+		2BF735821B90CED1006BFBAB /* level-three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-three.png"; sourceTree = "<group>"; };
+		2BF735831B90CED1006BFBAB /* level-two-advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-two-advanced.png"; sourceTree = "<group>"; };
+		2BF735841B90CED1006BFBAB /* level-two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level-two.png"; sourceTree = "<group>"; };
+		2BF735851B90CED1006BFBAB /* lightning-shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lightning-shield.png"; sourceTree = "<group>"; };
+		2BF735861B90CED1006BFBAB /* mail-shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-shirt.png"; sourceTree = "<group>"; };
+		2BF735871B90CED1006BFBAB /* mailed-fist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mailed-fist.png"; sourceTree = "<group>"; };
+		2BF735881B90CED1006BFBAB /* manacles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manacles.png; sourceTree = "<group>"; };
+		2BF735891B90CED1006BFBAB /* metal-disc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal-disc.png"; sourceTree = "<group>"; };
+		2BF7358A1B90CED1006BFBAB /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		2BF7358B1B90CED1006BFBAB /* silksash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silksash.png; sourceTree = "<group>"; };
+		2BF7358C1B90CED1006BFBAB /* steeltoe-boots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steeltoe-boots.png"; sourceTree = "<group>"; };
+		2BF7358D1B90CED1006BFBAB /* stopwatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopwatch.png; sourceTree = "<group>"; };
+		2BF7358E1B90CED1006BFBAB /* tyre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyre.png; sourceTree = "<group>"; };
+		2BF7358F1B90CED1006BFBAB /* walking-boot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking-boot.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,8 +267,34 @@
 		2BFA7DF71B8D3D7800B0DBFD /* images */ = {
 			isa = PBXGroup;
 			children = (
-				2BFA7DF51B8D3D7300B0DBFD /* bleeding-eye.png */,
-				2BFA7DF31B8D3D6B00B0DBFD /* tyre.png */,
+				2BF735741B90CED1006BFBAB /* bleeding-eye.png */,
+				2BF735751B90CED1006BFBAB /* boots.png */,
+				2BF735761B90CED1006BFBAB /* bracers.png */,
+				2BF735771B90CED1006BFBAB /* diamond-ring.png */,
+				2BF735781B90CED1006BFBAB /* fist.png */,
+				2BF735791B90CED1006BFBAB /* gem-chain.png */,
+				2BF7357A1B90CED1006BFBAB /* gem-necklace.png */,
+				2BF7357B1B90CED1006BFBAB /* gem-pendant.png */,
+				2BF7357C1B90CED1006BFBAB /* kimono.png */,
+				2BF7357D1B90CED1006BFBAB /* level-four-advanced.png */,
+				2BF7357E1B90CED1006BFBAB /* level-four.png */,
+				2BF7357F1B90CED1006BFBAB /* level-one-advanced.png */,
+				2BF735801B90CED1006BFBAB /* level-one.png */,
+				2BF735811B90CED1006BFBAB /* level-three-advanced.png */,
+				2BF735821B90CED1006BFBAB /* level-three.png */,
+				2BF735831B90CED1006BFBAB /* level-two-advanced.png */,
+				2BF735841B90CED1006BFBAB /* level-two.png */,
+				2BF735851B90CED1006BFBAB /* lightning-shield.png */,
+				2BF735861B90CED1006BFBAB /* mail-shirt.png */,
+				2BF735871B90CED1006BFBAB /* mailed-fist.png */,
+				2BF735881B90CED1006BFBAB /* manacles.png */,
+				2BF735891B90CED1006BFBAB /* metal-disc.png */,
+				2BF7358A1B90CED1006BFBAB /* ring.png */,
+				2BF7358B1B90CED1006BFBAB /* silksash.png */,
+				2BF7358C1B90CED1006BFBAB /* steeltoe-boots.png */,
+				2BF7358D1B90CED1006BFBAB /* stopwatch.png */,
+				2BF7358E1B90CED1006BFBAB /* tyre.png */,
+				2BF7358F1B90CED1006BFBAB /* walking-boot.png */,
 			);
 			name = images;
 			path = Labyrinthe;
@@ -303,12 +381,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF735991B90CED1006BFBAB /* level-four-advanced.png in Resources */,
+				2BF735901B90CED1006BFBAB /* bleeding-eye.png in Resources */,
+				2BF735A61B90CED1006BFBAB /* ring.png in Resources */,
+				2BF735AA1B90CED1006BFBAB /* tyre.png in Resources */,
+				2BF7359E1B90CED1006BFBAB /* level-three.png in Resources */,
 				2B2ECF921B62AEB500CA6E48 /* LaunchScreen.xib in Resources */,
-				2BFA7DF41B8D3D6B00B0DBFD /* tyre.png in Resources */,
+				2BF7359B1B90CED1006BFBAB /* level-one-advanced.png in Resources */,
+				2BF735A21B90CED1006BFBAB /* mail-shirt.png in Resources */,
+				2BF735941B90CED1006BFBAB /* fist.png in Resources */,
+				2BF735981B90CED1006BFBAB /* kimono.png in Resources */,
+				2BF7359F1B90CED1006BFBAB /* level-two-advanced.png in Resources */,
+				2BF735951B90CED1006BFBAB /* gem-chain.png in Resources */,
 				2B2ECFAB1B62B27800CA6E48 /* MZLGameViewController.xib in Resources */,
+				2BF7359C1B90CED1006BFBAB /* level-one.png in Resources */,
 				2B66BF1C1B81403900703F7F /* MZLShopViewController.xib in Resources */,
+				2BF735971B90CED1006BFBAB /* gem-pendant.png in Resources */,
+				2BF735931B90CED1006BFBAB /* diamond-ring.png in Resources */,
+				2BF735AB1B90CED1006BFBAB /* walking-boot.png in Resources */,
+				2BF735A41B90CED1006BFBAB /* manacles.png in Resources */,
+				2BF735A01B90CED1006BFBAB /* level-two.png in Resources */,
+				2BF735A11B90CED1006BFBAB /* lightning-shield.png in Resources */,
+				2BF735A81B90CED1006BFBAB /* steeltoe-boots.png in Resources */,
+				2BF735A31B90CED1006BFBAB /* mailed-fist.png in Resources */,
 				2B2ECF8F1B62AEB500CA6E48 /* Images.xcassets in Resources */,
-				2BFA7DF61B8D3D7300B0DBFD /* bleeding-eye.png in Resources */,
+				2BF735A51B90CED1006BFBAB /* metal-disc.png in Resources */,
+				2BF7359D1B90CED1006BFBAB /* level-three-advanced.png in Resources */,
+				2BF7359A1B90CED1006BFBAB /* level-four.png in Resources */,
+				2BF735921B90CED1006BFBAB /* bracers.png in Resources */,
+				2BF735A71B90CED1006BFBAB /* silksash.png in Resources */,
+				2BF735911B90CED1006BFBAB /* boots.png in Resources */,
+				2BF735961B90CED1006BFBAB /* gem-necklace.png in Resources */,
+				2BF735A91B90CED1006BFBAB /* stopwatch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
