@@ -30,7 +30,6 @@
     
     if (self) {
         
-        
         _shop = [[MZLShopFactory alloc] init];
         
     }
