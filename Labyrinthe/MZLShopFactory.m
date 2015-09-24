@@ -349,7 +349,7 @@
         
         MZLAccessory *accessoryStoneRing = [[MZLAccessory alloc] init];
         accessoryStoneRing.accessoryName = @"Stone Ring";
-        accessoryStoneRing.accessoryEffect = @"Pevents death. Restore to full health when killed. Breaks upon use.";
+        accessoryStoneRing.accessoryEffect = @"Prevents death. Restore to full health when killed. Breaks upon use.";
         
         MZLAccessory *accessoryEvilEye = [[MZLAccessory alloc] init];
         accessoryEvilEye.accessoryName = @"Evil Eye";
